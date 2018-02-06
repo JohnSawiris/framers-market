@@ -1,9 +1,12 @@
 import React from 'react';
+import Header from './Header';
+import Week from './Week';
 
 function App() {
   return(
     <div>
-      <h1>It workssssssss</h1>
+      <Header />
+      <Week />
     </div>
   );
 }
