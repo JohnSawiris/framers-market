@@ -1,6 +1,6 @@
 import React from 'react';
 import availableProduce from './SeasonArray';
-// import MonthDropdown from './MonthDropdown';
+import MonthDropdown from './MonthDropdown';
 import Season from './Season';
 
 function Months() {
@@ -13,14 +13,21 @@ function Months() {
     flexDirection: 'row',
     flexWrap: 'wrap'
   }
+
   const produce = availableProduce;
+
   return(
-    <div style={monthsStyle}>{
-      produce.map((item, i) =>
-        <Season month={item.month}
-          selection={item.selection}
-          key={i}/>
-      )}
+    <div>
+      <MonthDropdown />
+      <div style={monthsStyle}>
+
+        {
+        produce.map((item, i) =>
+          <Season month={item.month}
+            selection={item.selection}
+            key={i}/>
+        )}
+      </div>
     </div>
   );
 }

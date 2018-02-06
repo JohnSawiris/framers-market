@@ -1,5 +1,6 @@
 import React from 'react';
 import Day from './Day';
+import Button from './Button';
 
 function Week() {
   const marketSchedule = [
@@ -44,11 +45,17 @@ function Week() {
   const listContainer = {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-around',
-    flexWrap: 'wrap'
+    justifyContent: 'space-between',
+    flexWrap: 'wrap',
+    margin: "1rem"
   };
+  const redButton = {
+    backgroundColor: 'red',
+    color: 'white'
+  }
   return(
     <div style={listContainer}>
+      <Button text="Click here"/>
       {marketSchedule.map((days, i)=>
         <Day day={days.day}
           location={days.location}

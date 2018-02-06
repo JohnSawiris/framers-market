@@ -10,6 +10,7 @@ function Day(props) {
     fontSize: '20px',
     margin: '1rem 0',
     padding: '1rem',
+    flexGrow: "1",
     listStyle: 'none'
   };
 
