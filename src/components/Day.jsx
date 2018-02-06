@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Day (props) {
+function Day(props) {
 
   const dayStyles ={
     fontFamily: 'sans-serif',

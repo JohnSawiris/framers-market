@@ -44,7 +44,8 @@ function Week() {
   const listContainer = {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    flexWrap: 'wrap'
   };
   return(
     <div style={listContainer}>
