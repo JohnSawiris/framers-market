@@ -1,24 +1,48 @@
 import React from 'react';
 import Button from './Button'
+import SocialIcons from './SocialIcons';
+import NavBar from './NavBar';
 
 function Header() {
-  const purpleButton = {
-    backgroundColor: 'purple',
+  const orangeButton = {
+    backgroundColor: '#e15f26',
     color: 'white'
   }
 
   const brownButton = {
-    backgroundColor: 'brown',
+    backgroundColor: '#5f3812',
     color: 'white'
   }
 
   return(
     <div>
-      <h1>Epicodus Farmer's Market</h1>
-      <Button bgColor={purpleButton}
-              text="Subscribe to our newsletter"/>
-      <Button bgColor={brownButton}
-              text="Current Vendors"/>
+      <style jsx>
+        {`
+          .wrapper {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+          }
+          .brownBtn {
+            background-color: #5f3812;
+            color: #fff;
+          }
+          `}
+      </style>
+      <div className="wrapper">
+        <div>
+          <SocialIcons/>
+        </div>
+        <div>
+          <Button bgColor={orangeButton}
+            text="Subscribe to our newsletter"/>
+          <Button bgColor={brownButton}
+            text="Current Vendors"/>
+        </div>
+      </div>
+      <div>
+        <NavBar/>
+      </div>
     </div>
   );
 }

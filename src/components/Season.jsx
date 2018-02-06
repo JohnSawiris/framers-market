@@ -11,7 +11,7 @@ function Season(props) {
   return(
     <div style={seasonStyles}>
       <h1>{props.month}</h1>
-      <h3>What to Plant: </h3>
+      <h3>What's In Season: </h3>
       <div>{
         props.selection.map((item, i) =>
           <p key={i}>{item}</p>

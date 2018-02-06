@@ -7,9 +7,10 @@ function Button(props) {
     <style jsx>
       {`
         .btn {
-          padding: .5rem;
+          padding: .75rem;
+          margin: 0.25rem;
           border-radius: 5px;
-          font-size: 18px;
+          font-size: 14px;
           border: none;
         }
         `}

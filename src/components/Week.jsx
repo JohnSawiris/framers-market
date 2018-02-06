@@ -49,13 +49,9 @@ function Week() {
     flexWrap: 'wrap',
     margin: "1rem"
   };
-  const redButton = {
-    backgroundColor: 'red',
-    color: 'white'
-  }
+
   return(
     <div style={listContainer}>
-      <Button text="Click here"/>
       {marketSchedule.map((days, i)=>
         <Day day={days.day}
           location={days.location}
